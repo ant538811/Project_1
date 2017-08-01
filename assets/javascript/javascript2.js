@@ -12,8 +12,8 @@ var config = {
 //clicking on button passes input to searchInput
 $("#submitButton").on("click", function()
 {
-	input = $("#userInput").val().trim();
-	searchInput(input);
+  input = $("#userInput").val().trim();
+  searchInput(input);
 });
 
 //trending clicked passes input field to userInput
@@ -21,11 +21,11 @@ $("#submitButton").on("click", function()
 //search info
 function searchInput(characterInput) 
 {
-	console.log(characterInput);
-    database.ref().set({
-	input: input
+  console.log(characterInput);
+  database.ref().set({
+  input: input
 });
-  window.location.href = "index2.html";
+    
 }
 
 
