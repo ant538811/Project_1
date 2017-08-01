@@ -1,3 +1,4 @@
+//initializing the firebase
 var config = {
     apiKey: "AIzaSyB-UI9qoMgsE9H1YHvwhh7UJ_kIasWWYxI",
     authDomain: "project1-53cb3.firebaseapp.com",
@@ -9,6 +10,13 @@ var config = {
   firebase.initializeApp(config);
   var database = firebase.database();
   var input = "";
+
+//retrieving firebase info
+  database.ref().on("value", function(snapshot) 
+  {
+      console.log(snapshot.val());
+  });
+  
 //clicking on button passes input to searchInput
 $("#submitButton").on("click", function()
 {
