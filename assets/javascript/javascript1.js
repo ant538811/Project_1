@@ -33,4 +33,3 @@ $("#hero-icon").on("click", function()
 //////flickr API char icons STARTS here//////
 
 
-
