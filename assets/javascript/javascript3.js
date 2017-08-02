@@ -1,20 +1,12 @@
-//initializing the firebase
-var config = {
-    apiKey: "AIzaSyB-UI9qoMgsE9H1YHvwhh7UJ_kIasWWYxI",
-    authDomain: "project1-53cb3.firebaseapp.com",
-    databaseURL: "https://project1-53cb3.firebaseio.com",
-    projectId: "project1-53cb3",
-    storageBucket: "",
-    messagingSenderId: "1045216757135"
-  };
-  firebase.initializeApp(config);
-  var database = firebase.database();
-  var input = "";
-//retrieving firebase info
-  database.ref().on("value", function(snapshot) 
-  {
-      console.log(snapshot.val());
-  });
+
+
+//prints results to search results page;  testing how to retrieve session storage info as a variable
+$(".results").html("This is " + sessionStorage.getItem("userInput") + "'s webpage");
+$("#charName").html(sessionStorage.getItem("userInput"));
+var testing = sessionStorage.getItem("userInput");
+console.log(testing); 
+
+
 //clicking on button passes input to searchInput
 $("#submitButton").on("click", function()
 {
@@ -22,14 +14,16 @@ $("#submitButton").on("click", function()
   searchInput(input);
 });
 
-//trending clicked passes input field to userInput
 
-//search info
+//sets the search field into session storage
 function searchInput(characterInput) 
 {
   console.log(characterInput);
-  database.ref().set({
-  input: input
-});
-    
+    sessionStorage.setItem("userInput", input);
+ if (sessionStorage.getItem("userInput") != "")
+    {
+      window.location.href = "index2.html";
+    }
 }
+
+
