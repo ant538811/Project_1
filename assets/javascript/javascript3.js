@@ -5,6 +5,7 @@ input = sessionStorage.getItem("userInput");
 $("#charName").html(sessionStorage.getItem("userInput"));
 var testing = sessionStorage.getItem("userInput");
 console.log(testing);
+console.log(sessionStorage.getItem("userInput")) ;
 masterInfo(sessionStorage.getItem("userInput")) ;
 
 
@@ -37,6 +38,7 @@ function masterInfo(input)
         })
         .done(function(response) 
         {
+          console.log(response);
         $("#name").html(response.data.results[0].name);
         $("#description").html(response.data.results[0].description);
       })

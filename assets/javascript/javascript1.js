@@ -19,15 +19,16 @@ function searchInput(characterInput)
  	}
 }
 //////Input Bar ENDS Here//////
-//////Trending Character Links STARTS here//////r
+//////Trending Character Links STARTS here//////
 //click character icon directs user to character page
-$(".comic-fav-image").on("click", function()
+$(".comic-fav").on("click", function()
 {
 	var input = $(this).val();
+	console.log(input);
 	sessionStorage.setItem("userInput", input);
 	//searchInput(input); //modify so that passing input actually takes you to page 3 with passed input
 						//do so by using the comic vine api like page 2
-	window.location.href = "index3.html";
+	// window.location.href = "index3.html";
 });
 //////Trending Character Links ENDS here//////
 //////flickr API char icons STARTS here//////
