@@ -21,7 +21,7 @@ function searchInput(characterInput)
 //////Input Bar ENDS Here//////
 //////Trending Character Links STARTS here//////r
 //click character icon directs user to character page
-$(".hero-icon").on("click", function()
+$("#hero-icons").on("click", function()
 {
 	input = $(this).val();
 	sessionStorage.setItem("userInput", input);
