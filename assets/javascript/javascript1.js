@@ -23,12 +23,12 @@ function searchInput(characterInput)
 //click character icon directs user to character page
 $(".comic-fav").on("click", function()
 {
-	var input = $(this).val();
+	var input = $(this).text();
 	console.log(input);
 	sessionStorage.setItem("userInput", input);
 	//searchInput(input); //modify so that passing input actually takes you to page 3 with passed input
 						//do so by using the comic vine api like page 2
-	// window.location.href = "index3.html";
+	window.location.href = "index3.html";
 });
 //////Trending Character Links ENDS here//////
 //////flickr API char icons STARTS here//////
