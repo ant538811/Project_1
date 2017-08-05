@@ -5,7 +5,7 @@ sessionStorage.removeItem('userInput');
 //clicking on button passes input to searchInput
 $("#submitButton").on("click", function()
 {
-	input = $("#userInput").val().trim();
+	var input = $("#userInput").val().trim();
 	searchInput(input);
 });
 //sets the search field into session storage
@@ -21,9 +21,9 @@ function searchInput(characterInput)
 //////Input Bar ENDS Here//////
 //////Trending Character Links STARTS here//////r
 //click character icon directs user to character page
-$("#hero-icons").on("click", function()
+$(".comic-fav-image").on("click", function()
 {
-	input = $(this).val();
+	var input = $(this).val();
 	sessionStorage.setItem("userInput", input);
 	//searchInput(input); //modify so that passing input actually takes you to page 3 with passed input
 						//do so by using the comic vine api like page 2

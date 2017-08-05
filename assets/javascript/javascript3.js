@@ -1,4 +1,4 @@
-var input = sessionStorage.getItem("userInput");
+input = sessionStorage.getItem("userInput");
 
 
 //prints results to search results page;  testing how to retrieve session storage info as a variable
