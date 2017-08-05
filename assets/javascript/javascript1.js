@@ -21,9 +21,9 @@ function searchInput(characterInput)
 //////Input Bar ENDS Here//////
 //////Trending Character Links STARTS here//////r
 //click character icon directs user to character page
-$("#hero-icon").on("click", function()
+$(".hero-icon").on("click", function()
 {
-	input = $("#hero-icon").val();
+	input = $(this).val();
 	sessionStorage.setItem("userInput", input);
 	//searchInput(input); //modify so that passing input actually takes you to page 3 with passed input
 						//do so by using the comic vine api like page 2
