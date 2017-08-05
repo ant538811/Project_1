@@ -5,6 +5,7 @@ html{
 body{
 	width: 100%;
 	margin: 0 0 100px; /* bottom = footer height */
+
 	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif; 
 	color: #777;
 }
@@ -54,6 +55,7 @@ h1{
     font-weight: bold;	
 }
 .nav-bar{
+
 	padding:0px;	
 	margin: 0px;
 	background-color: #fff;
@@ -99,6 +101,7 @@ hr{
 
 .main-section{
 	margin-top: 30px;	
+
 	padding: 10px;
 	background-color: #fff;		
 	width:800px;
@@ -134,7 +137,6 @@ a.fav-buttons {
 }
 
 
-
 .main-image{
 	width:200px;
 
@@ -148,6 +150,7 @@ li .icon-image{
 .sidebar-section{
 	background-color: #ffffff;
 	margin: 30px 0 10px 28px;		
+
 	padding: 8px;
 	border: #ddd solid 1px;
 	width: 310px;
@@ -166,6 +169,8 @@ footer{
 	color: #fff;
 }
 .section-footer{
+
+
 }
 p{
 	line-height: 25px;
