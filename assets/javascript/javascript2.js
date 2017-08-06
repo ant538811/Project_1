@@ -32,7 +32,15 @@ function searchResults(input)
         {
           console.log(response);
           $(".results").html(response.data.results[0].name);
-          $(".results2").html(response.data.results[0].description);
+          if (response.data.results[0].description != "")
+          {
+            $(".results2").html(response.data.results[0].description);
+          }
+          else
+          {
+            $(".results2").html("description not available");
+            //substitute API description
+          }
           var resultImage = response.data.results[0].thumbnail.path + "." + response.data.results[0].thumbnail.extension;
           console.log(resultImage);
           $(".results3").html('<img src =' + resultImage + '>');
