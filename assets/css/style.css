@@ -124,21 +124,78 @@ hr{
 .comic-fav:active {
 	background-color: #c7c5c5;
 }
-
-
+.comic-results-img{
+	margin: 30px 2px 10px 2px;	
+	padding: 8px;
+	background-color: #fff;		
+	width:150px;
+	border: #ddd solid 1px;
+	float: left;
+	}
+.comic-results-overview{
+	margin: 30px 2px 10px 2px;	
+	padding: 8px;
+	background-color: #fff;		
+	width:620px;
+	border: #ddd solid 1px;
+	float: left;
+	}
+.comic-results-origin{
+	margin: 30px 2px 10px 2px;	
+	padding: 8px;
+	background-color: #fff;		
+	width:100%;
+	border: #ddd solid 1px;
+	float: left;
+	}
 a.fav-buttons {
     display: block;
     height: 100%;
     width: 100%;
     text-decoration: none;
 }
-
-
-
+.comic-results-history{
+	margin: 30px 2px 10px 2px;	
+	padding: 8px;
+	background-color: #fff;		
+	width:620px;
+	border: #ddd solid 1px;
+	float: left;
+	}
+.comic-results-history-img{
+	margin: 30px 2px 10px 2px;	
+	padding: 8px;
+	background-color: #fff;		
+	width:150px;
+	border: #ddd solid 1px;
+	float: left;
+	}
+.comic-results-abilities{
+	margin: 30px 2px 10px 2px;	
+	padding: 8px;
+	background-color: #fff;		
+	width:100%;
+	border: #ddd solid 1px;
+	float: left;
+	}
+.comic-results-movies{
+	margin: 30px 2px 10px 2px;	
+	padding: 8px;
+	background-color: #fff;		
+	width:255px;
+	border: #ddd solid 1px;
+	float: left;
+	}
+.comic-results-merch{
+	margin: 30px 2px 10px 2px;	
+	padding: 8px;
+	background-color: #fff;		
+	width:100%;
+	border: #ddd solid 1px;
+	float: left;
+	}		
 .main-image{
 	width:200px;
-
-
 }
 li .icon-image{
 	width: 50px;
