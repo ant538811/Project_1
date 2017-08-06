@@ -3,11 +3,11 @@ sessionStorage.removeItem('userInput');
 
 //////Input Bar STARTS Here//////
 //clicking on button passes input to searchInput
-$("#submitButton").on("click", function()
+function submitButtonClicked()
 {
 	var input = $("#userInput").val().trim();
 	searchInput(input);
-});
+}
 //sets the search field into session storage
 function searchInput(characterInput) 
 {
