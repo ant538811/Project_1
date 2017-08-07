@@ -35,6 +35,7 @@ function searchResults(input)
           $(".results2").html(response.data.results[0].description);
           var resultImage = response.data.results[0].thumbnail.path + "." + response.data.results[0].thumbnail.extension;
           console.log(resultImage);
+          console.log(unfound);
           $(".results3").html('<img src =' + resultImage + '>');
       }) 
    /* $.ajax(
