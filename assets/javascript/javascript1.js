@@ -3,7 +3,7 @@ sessionStorage.removeItem('userInput');
 
 //////Input Bar STARTS Here//////
 //clicking on button passes input to searchInput
-$(".search-glass").on("click", function()
+/*$(".search-glass").on("click", function()
 {
 	var input = $(".form-control").val().trim();
 	searchInput(input);
@@ -17,7 +17,7 @@ function searchInput(characterInput)
  	{
   		window.location.href = "index2.html";
  	}
-}
+}*/
 //////Input Bar ENDS Here//////
 //////Trending Character Links STARTS here//////
 //click character icon directs user to character page
