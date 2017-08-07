@@ -41,5 +41,8 @@ function masterInfo(input)
           console.log(response);
         $(".title").html(response.data.results[0].name);
         $(".comic-results-overview").html(response.data.results[0].description);
+        var resultImage = response.data.results[0].thumbnail.path + "." + response.data.results[0].thumbnail.extension;
+          console.log(resultImage);
+          $(".comic-results-img").html('<img src =' + resultImage + '>');
       })
 }

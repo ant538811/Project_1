@@ -28,7 +28,7 @@ $(".comic-fav").on("click", function()
 	sessionStorage.setItem("userInput", input);
 	//searchInput(input); //modify so that passing input actually takes you to page 3 with passed input
 						//do so by using the comic vine api like page 2
-	window.location.href = "index3.html";
+	window.location.href = "results.html";
 });
 //////Trending Character Links ENDS here//////
 //////flickr API char icons STARTS here//////
