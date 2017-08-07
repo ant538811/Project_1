@@ -5,7 +5,7 @@ sessionStorage.removeItem('userInput');
 //clicking on button passes input to searchInput
 $(".search-glass").on("click", function()
 {
-	var input = $("#userInput").val().trim();
+	var input = $(".form-control").val().trim();
 	searchInput(input);
 });
 //sets the search field into session storage
