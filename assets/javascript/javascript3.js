@@ -7,6 +7,7 @@ var testing = sessionStorage.getItem("userInput");
 console.log(testing);
 console.log(sessionStorage.getItem("userInput")) ;
 masterInfo(sessionStorage.getItem("userInput")) ;
+displayMovieInfo(sessionStorage.getItem("userInput")) ;
 
 
 //clicking on button passes input to searchInput
@@ -46,3 +47,14 @@ function masterInfo(input)
           $(".comic-results-img").html('<img src =' + resultImage + '>');
       })
 }
+
+function displayMovieInfo(input) {
+        var movie = input;
+        var queryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=40e9cece";
+        // Creates AJAX call for the specific movie button being clicked
+        $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).done(function(response) {
+          console.log(response.poster);
+         $('.comic-results-movies').prepend("<img id= poster src= "+ response.Poster +"/>");
