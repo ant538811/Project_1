@@ -1,8 +1,8 @@
-$(".search-glass").on("click", function()
+function searchIconClicked()
 {
 	var input = $(".form-control").val().trim();
 	searchInput(input);
-});
+}
 //sets the search field into session storage
 function searchInput(characterInput) 
 {
