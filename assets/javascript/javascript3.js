@@ -10,7 +10,7 @@ masterInfo(sessionStorage.getItem("userInput")) ;
 
 
 //clicking on button passes input to searchInput
-$("#submitButton").on("click", function()
+$(".submitButton").on("click", function()
 {
   input = $("#userInput").val().trim();
   searchInput(input);

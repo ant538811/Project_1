@@ -3,7 +3,7 @@ sessionStorage.removeItem('userInput');
 
 //////Input Bar STARTS Here//////
 //clicking on button passes input to searchInput
-$(".search-glass").on("click", function()
+$(".submitButton").on("click", function()
 {
 	var input = $(".form-control").val().trim();
 	searchInput(input);
