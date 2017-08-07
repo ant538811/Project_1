@@ -39,7 +39,7 @@ function masterInfo(input)
         .done(function(response) 
         {
           console.log(response);
-        $("#name").html(response.data.results[0].name);
-        $("#description").html(response.data.results[0].description);
+        $(".title").html(response.data.results[0].name);
+        $(".comic-results-overview").html(response.data.results[0].description);
       })
 }
