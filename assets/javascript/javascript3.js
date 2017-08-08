@@ -44,17 +44,43 @@ function masterInfo(input)
         $(".comic-results-overview").html(response.data.results[0].description);
         var resultImage = response.data.results[0].thumbnail.path + "." + response.data.results[0].thumbnail.extension;
           console.log(resultImage);
-          $(".comic-results-img").html('<img src =' + resultImage + '>');
+          $(".comic-results-img").html('<img src =' + resultImage + ' ' +'width="300" height="250">');
       })
 }
 
-function displayMovieInfo(input) {
-        var movie = input;
+function displayMovieInfo(input) 
+{
+        var originalMovie = input;
+        var movie = originalMovie;
         var queryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=40e9cece";
         // Creates AJAX call for the specific movie button being clicked
-        $.ajax({
+        $.ajax(
+        {
           url: queryURL,
           method: "GET"
-        }).done(function(response) {
-          console.log(response.poster);
-         $('.comic-results-movies').prepend("<img id= poster src= "+ response.Poster +"/>");
+        })
+        .done(function(response) 
+        {
+          console.log(response);
+         $('.comic-results-movies').append("<img id= poster src= "+ response.Poster +"/>");
+       })
+        for (var sequel = 2; sequel <= 3; sequel++)
+        {
+          movie = originalMovie + " " + sequel;
+          var queryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=40e9cece";
+          console.log(movie);
+          $.ajax(
+        {
+          url: queryURL,
+          method: "GET"
+        })
+        .done(function(response) 
+        {
+         if (response.Poster != null)
+          {
+            console.log(response);
+         $('.comic-results-movies').append("<img id= poster src= "+ response.Poster +"/>");
+          }
+       })
+        }
+     }
