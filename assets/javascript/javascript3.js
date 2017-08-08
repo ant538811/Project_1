@@ -45,6 +45,11 @@ function masterInfo(input)
         var resultImage = response.data.results[0].thumbnail.path + "." + response.data.results[0].thumbnail.extension;
           console.log(resultImage);
           $(".comic-results-img").html('<img src =' + resultImage + ' ' +'width="200" height="200">');
+         // $(".comic-results-merch").text(response.data.results[2].comics.items[0].name);
+         for (var feauturedComics = 0; feauturedComics < 10; feauturedComics++)
+         {
+          $(".comic-results-merch").append(response.data.results[0].comics.items[feauturedComics].name + "<br>");
+        }
       })
 }
 
@@ -61,7 +66,6 @@ function displayMovieInfo(input)
         })
         .done(function(response) 
         {
-          console.log(response);
          $('.comic-results-movies').append("<img id= poster src= "+ response.Poster +"/>");
        })
         for (var sequel = 2; sequel <= 3; sequel++)
