@@ -15,7 +15,7 @@ function searchInput(characterInput)
     sessionStorage.setItem("userInput", input);
  if (sessionStorage.getItem("userInput") != "")
  	{
-  		window.location.href = "index2.html";
+  		window.location.href = "results.html";
  	}
 }*/
 //////Input Bar ENDS Here//////

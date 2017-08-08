@@ -10,6 +10,6 @@ function searchInput(characterInput)
     sessionStorage.setItem("userInput", characterInput);
  if (sessionStorage.getItem("userInput") != "")
  	{
-  		window.location.href = "index2.html";
+  		window.location.href = "results.html";
  	}
 }
