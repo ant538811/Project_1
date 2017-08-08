@@ -52,7 +52,7 @@ function displayMovieInfo(input)
 {
         var originalMovie = input;
         var movie = originalMovie;
-        var queryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=40e9cece";
+        var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=40e9cece";
         // Creates AJAX call for the specific movie button being clicked
         $.ajax(
         {
@@ -67,7 +67,7 @@ function displayMovieInfo(input)
         for (var sequel = 2; sequel <= 3; sequel++)
         {
           movie = originalMovie + " " + sequel;
-          var queryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=40e9cece";
+          var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=40e9cece";
           console.log(movie);
           $.ajax(
         {
