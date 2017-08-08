@@ -44,7 +44,7 @@ function masterInfo(input)
         $(".comic-results-overview").html(response.data.results[0].description);
         var resultImage = response.data.results[0].thumbnail.path + "." + response.data.results[0].thumbnail.extension;
           console.log(resultImage);
-          $(".comic-results-img").html('<img src =' + resultImage + ' ' +'width="300" height="250">');
+          $(".comic-results-img").html('<img src =' + resultImage + ' ' +'width="200" height="200">');
       })
 }
 
