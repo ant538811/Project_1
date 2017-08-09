@@ -41,10 +41,10 @@ function masterInfo(input)
         {
           console.log(response);
         $(".title").html(response.data.results[0].name);
-        $(".comic-results-overview").html(response.data.results[0].description);
+        $(".overview-summary").html(response.data.results[0].description);
         var resultImage = response.data.results[0].thumbnail.path + "." + response.data.results[0].thumbnail.extension;
           console.log(resultImage);
-          $(".comic-results-img").html('<img src =' + resultImage + ' ' +'width="200" height="200">');
+          $(".comic-results-img").html('<img class="comic-img" src =' + resultImage + ' ' +'>');
          // $(".comic-results-merch").text(response.data.results[2].comics.items[0].name);
          for (var feauturedComics = 0; feauturedComics < 10; feauturedComics++)
          {
@@ -66,7 +66,7 @@ function displayMovieInfo(input)
         })
         .done(function(response) 
         {
-         $('.comic-results-movies').append("<img id= poster src= "+ response.Poster +"/>");
+         $('.comic-results-movies').append("<img id=comic-poster src= "+ response.Poster +"/>");
        })
         for (var sequel = 2; sequel <= 3; sequel++)
         {
@@ -83,7 +83,7 @@ function displayMovieInfo(input)
          if (response.Poster != null)
           {
             console.log(response);
-         $('.comic-results-movies').append("<img id= poster src= "+ response.Poster +"/>");
+         $('.comic-results-movies').append("<img id= comic-poster src= "+ response.Poster +"/>");
           }
        })
         }
