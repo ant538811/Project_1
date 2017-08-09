@@ -39,7 +39,7 @@ header{
 	max-width:1170px;
 }
 .logo{
-	width: 250px;
+	width: 200px;
 	margin-top: 15px;
 	float: left;
 	text-align: center;
@@ -53,12 +53,20 @@ h1{
     font-size: 2em;
     font-weight: bold;	
 }
+
+h3{
+	display: block;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;	
+}
+
 .nav-bar{
 	padding:0px;	
 	margin: 0px;
 	background-color: #fff;
 	float: right;
-	width: 230px;
+	width: 150px;
 }
 ul{
 	padding: 0;
@@ -124,77 +132,55 @@ hr{
 	background-color: #c7c5c5;
 }
 .comic-results-img{
-	margin: 30px 2px 10px 2px;	
-	
+	margin: 10px;	
 	background-color: #fff;		
-	width:204px;
-	border: #ddd solid 1px;
+	width:200px;
+	height:200px;
+	border: #ddd solid 2px;
 	float: left;
+	}
+	.comic-img{
+	width: 196px;	
 	}
 .comic-results-overview{
-	margin: 30px 2px 10px 2px;	
-	padding: 8px;
+	margin: 10px 2px 10px 2px;	
+	padding: 10px;
 	background-color: #fff;		
-	width:620px;
+	width:550px;
 	border: #ddd solid 1px;
 	float: left;
 	}
-.comic-results-origin{
-	margin: 30px 2px 10px 2px;	
-	padding: 8px;
-	background-color: #fff;		
-	max-width:550px;
-	border: #ddd solid 1px;
-	float: left;
-	}
+
 a.fav-buttons {
     display: block;
     height: 100%;
     width: 100%;
     text-decoration: none;
 }
-.comic-results-history{
-	margin: 30px 2px 10px 2px;	
-	padding: 8px;
-	background-color: #fff;		
-	width:620px;
-	border: #ddd solid 1px;
-	float: left;
-	}
-.comic-results-history-img{
-	margin: 30px 2px 10px 2px;	
-	padding: 8px;
-	background-color: #fff;		
-	width:150px;
-	border: #ddd solid 1px;
-	float: left;
-	}
-.comic-results-abilities{
-	margin: 30px 2px 10px 2px;	
+
+
+.comic-results-movies{
+	margin: 30px auto;	
 	padding: 8px;
 	background-color: #fff;		
 	width:100%;
-	border: #ddd solid 1px;
-	float: left;
-	}
-.comic-results-movies{
-	margin: 30px 2px 10px 2px;	
-	padding: 8px;
-	background-color: #fff;		
-	width:255px;
 	border: #ddd solid 1px;
 	float: left;
 	}
 .comic-results-merch{
-	margin: 30px 2px 10px 2px;	
+	margin: 0px 2px 10px 2px;	
 	padding: 8px;
 	background-color: #fff;		
 	width:100%;
 	border: #ddd solid 1px;
 	float: left;
-	}		
+	}
+#comic-poster{
+	height:320px;
+	padding:8px;
+}			
 .main-image{
-	width:200px;
+	width:170px;
 }
 li .icon-image{
 	width: 50px;
@@ -225,7 +211,7 @@ footer{
 }
 p{
 	line-height: 25px;
-	margin: 20px 0;
+	margin: 10px 0;
 	display: block;
 }
 .field-box{
@@ -266,7 +252,7 @@ border:solid 0px white;
 font-size: 28px;
 }
 
-.search-glass{
+.submitButton{
 	width:29px;
 	float: right;
 	margin: 2px 10px 0 0;
@@ -297,57 +283,29 @@ a.submit-text-link:link {
 	color: #fff;
 	text-decoration: none;
 }
-.port-rows{
-	max-width:590px;
-	margin-bottom: 30px;	
-	overflow: auto;
-}
-.port-box-left{
-	width:270px;
-	position: relative;
-	height: 203px;
-	margin: 0 20px 0 0;
-	float: left;
-}
-.port-box-right{
-	width:270px;
-	position: relative;
-	height: 203px;
-	margin: 0;
-	float: left;
-}
-.port-box-label { 
-  	position:absolute;
-	font-family: "Georgia", Times, Times New Roman, serif;
-  	bottom:0;
-  	background-color:#4aaaa5;
-  	width:100%;
-  	text-align:center;
-  	color: #fff;
-  	height: 30px;
-  	line-height: 30px;
-}
-p.port-box-label{
-	margin-bottom: 6px;
-}
+
 
 @media only screen and (max-width: 960px) {
 	.sidebar-section{	
 	margin: 30px 0px 100px 0px;	
 }
+.main-section{
+	width: 100%;
+}
 
-li .icon-image{
-	width: 50px;
-	padding-right: 15px;
-}
-.port-images{
-	max-width:270px;
-}
+.comic-results-overview{
+	margin: 10px 2px 10px 2px;	
+	padding: 10px;
+	background-color: #fff;		
+	max-width:500px;
+	border: #ddd solid 1px;
+	float: left;
+	}
 
 }
 @media only screen and (max-width: 768px) {
 .nav-bar{
-	padding-top: 20px;		
+	
 	text-align: center;
 }
 .logo{
@@ -362,6 +320,15 @@ footer{
 .section-footer{
 	padding-top: 10px
 }
+.comic-results-overview{
+	margin: 10px 2px 10px 2px;	
+	padding: 10px;
+	background-color: #fff;		
+	max-width:400px;
+	min-width: 100px;
+	border: #ddd solid 1px;
+	float: left;
+	}
 
 }
 
@@ -373,6 +340,28 @@ footer{
 .sidebar-section{
 	margin: 30px 0 40px 0px;	
 }
+
+.comic-results-img{
+	margin: 0 auto;	
+	background-color: #fff;		
+	width:100%;
+	height:100%;
+	border: #ddd solid 2px;
+	}
+	.comic-img{
+	width: 100%;	
+	}
+	.comic-results-overview{
+	margin: 10px 2px 10px 2px;	
+	padding: 10px;
+	background-color: #fff;		
+	max-width:100%;
+	border: #ddd solid 1px;
+	}
+	#comic-poster{
+	width: 100%;
+	height: 100%	
+	}
 
 
 }
